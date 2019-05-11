@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Read">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="29dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_read"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="CRUD" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="主題"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20180802"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/Article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文章範例"
+            android:textSize="20sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
